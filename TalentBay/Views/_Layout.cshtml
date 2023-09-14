@@ -99,18 +99,11 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="course.html" class="nav-item nav-link">Courses</a>
-                            <a href="teacher.html" class="nav-item nav-link">Teachers</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Blog List</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            @Html.ActionLink("Index","Index","Home", null, new{@class = "nav-link"})
+                            @Html.ActionLink("About","About","Home", null, new{@class = "nav-link"})
+                            @Html.ActionLink("Courses","Courses","Home", null, new{@class = "nav-link"})
+                            @Html.ActionLink("Teachers","Teachers","Home", null, new{@class = "nav-link"})
+                            @Html.ActionLink("Contact","Contact","Home", null, new{@class = "nav-link"})
                         </div>
                         <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                     </div>
